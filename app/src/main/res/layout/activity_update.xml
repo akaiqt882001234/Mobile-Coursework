@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".UpdateActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Trip *"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_name2"
+        app:layout_constraintTop_toBottomOf="@+id/text_ID" />
+
+    <EditText
+        android:id="@+id/text_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Name of Trip"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Destination *"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_destination2"
+        app:layout_constraintTop_toBottomOf="@+id/text_name2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/text_destination2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Destination"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Date of Trip *"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_date2"
+        app:layout_constraintTop_toBottomOf="@+id/text_destination2" />
+
+    <EditText
+        android:id="@+id/text_date2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="dd/mm/yyyy"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Require Risks Assessment *"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_date2"
+        app:layout_constraintTop_toBottomOf="@+id/text_date2" />
+
+    <EditText
+        android:id="@+id/text_risk2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Ex: Yes/No"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Description *"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_description2"
+        app:layout_constraintTop_toBottomOf="@+id/text_risk2" />
+
+    <EditText
+        android:id="@+id/text_description2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Description"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/update_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/text_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID"
+        android:minHeight="48dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:text="UPDATE"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_description2" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:text="DELETE"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/update_button"
+        app:layout_constraintTop_toBottomOf="@+id/text_description2" />
+
+    <Button
+        android:id="@+id/expense_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="SEE ALL EXPENSES"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

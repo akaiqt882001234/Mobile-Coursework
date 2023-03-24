@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radioText2" type="id" />
+    <item name="text_risk2" type="id" />
+    <item name="radioButton2" type="id" />
+    <item name="radioText3" type="id" />
+    <item name="text_descripton2" type="id" />
+    <item name="delele_all" type="id" />
+</resources>
